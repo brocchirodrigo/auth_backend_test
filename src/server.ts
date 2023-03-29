@@ -196,4 +196,6 @@ app.get("/me", checkAuthMiddleware, (request, response) => {
   });
 });
 
-app.listen(3333);
+app.listen(3333, () => {
+  console.info("Server on port 3333.");
+});
