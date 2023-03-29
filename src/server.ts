@@ -98,7 +98,7 @@ function addUserInformationToRequest(
   }
 }
 
-app.get("/info", (_, response) => {
+app.get("/", (request, response) => {
   const info = {
     admin: "rodrigo.brocchi@gmail.com",
     other_role: "rodrigo@imaginer.com.br",
